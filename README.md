@@ -59,7 +59,7 @@ We then split the dataframe into 613 dataframes each of which housed the data fo
 <img src="/figs/ind_chems.png" alt="chemical file names" height="200" width="200">
 <p><p>
 <img src="/figs/fates.png" alt="chemical fates" height="200" width="200">
-<br>Fate classifcations
+<br>Fate classifications
 </td></tr>
 <tr><td colspan=2 align="center"><center>Cross section of fate data for Benzene</center><br><p>
 <img src="/figs/benzene_df.png" alt="Benzene data" height="280" width="500">
