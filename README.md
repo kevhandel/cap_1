@@ -53,15 +53,15 @@ We then split the dataframe into 613 dataframes each of which housed the data fo
 
 ### Start the EDA...
 <table>
-<tr><td align="center">Some of the 630 chemicals<p>
+<tr><td align="center">Some of the 630 chemicals<br><p>
 <img src="/figs/ind_chem_long_jn.png" alt = "chemical in TRI" height="420" width="200"></td>
-<td align="center">New individual csv files<p>
+<td align="center">New individual csv files<br><p>
 <img src="/figs/ind_chems.png" alt="chemical file names" height="200" width="200">
 <p><p>
 <img src="/figs/fates.png" alt="chemical fates" height="200" width="200">
 <br>Fate classifcations
 </td></tr>
-<tr><td colspan=2 align="center"><center>Cross section of fate data for Benzene</center><p>
+<tr><td colspan=2 align="center"><center>Cross section of fate data for Benzene</center><br><p>
 <img src="/figs/benzene_df.png" alt="Benzene data" height="280" width="500">
 </td></tr>
 <tr><td colspan="2" align="center">
@@ -70,9 +70,9 @@ We then split the dataframe into 613 dataframes each of which housed the data fo
 </table>
 
 
-#### Graphing by the 1000's...
+### Graphing by the 1000's...
 <table>
-<tr><td align="center">A few graphs showing fate over time<p>
+<tr><td align="center">A few graphs showing fate over time<br><p>
 <img src="/figs/fig_chemicals_BENZENE_ON-SITE_RELEASE_TOTAL.png" alt = "Benzene on site release" height="300" width="500"></td>
 </tr><tr><td align="center">
 <img src="/figs/fig_chemicals_BENZENE_TOTAL_RELEASES.png" alt = "Benzene total fig_chemicals_BENZENE_TOTAL_RELEASES" height="300" width="500"></td>
