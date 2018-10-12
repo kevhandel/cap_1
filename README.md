@@ -102,12 +102,47 @@ The next distribution graph of emission amounts would demonstrate that an effect
 
 Had this worked well, we could select other fates and attempt to discover which ones change over time.
 
+<table>
+<tr><td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_M-XY_5.1_.png" alt = "M-Xylene Fugitve" height="250" width="400"></td>
+
+<td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_M-XY_5.2_.png" alt = "M-Xylene stack" height="250" width="400"></td></tr>
+
+<tr><td align="center"><br><p>
+<img src="/figs/HIST/fig_2Hist_L2_METH_5.1_.png" alt = "Methylene fugitive" height="250" width="400"></td>
+
+<td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_METH_5.2_.png" alt = "Methylene stack" height="250" width="400"></td>
+</tr>
+
+<tr><td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_STYR_5.1_.png" alt = "Styrene fugitve" height="250" width="400"></td>
+
+<td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_STYR_5.3_.png" alt = "Styrene water" height="250" width="400"></td>
+</tr>
+
+<tr><td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_TOLU_5.1_.png" alt = "Toluene fugitive" height="250" width="400"></td>
+
+<td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_TOLU_5.2_.png" alt = "Toluene stack" height="250" width="400"></td>
+</tr>
+
+<tr><td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_XYLE_5.1_.png" alt = "Xylene fugitive" height="250" width="400"></td>
+
+<td align="center"><br><p>
+<img src="/figs/hist/fig_2Hist_L2_XYLE_5.2_.png" alt = "Xylene stack" height="250" width="400"></td>
+</tr>
+</table>
 <p>&nbsp;
+
 
 ### Results...
 The data are interesting in that emission fates exhibit marked variability over time for many of the chemicals.
-However, without numerical analysis, we cannot test the data using regression models in an attempt to
-ascertain true correlation between the various fates.
+However, without significant further numerical analysis, we cannot test the data using regression models in an attempt to ascertain true correlation between the various fates.
 <p>&nbsp;
 
 ### Looking Ahead...
