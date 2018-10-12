@@ -26,6 +26,28 @@ def create_plot():
     plt.savefig(f'figs/chemsicals_{md}.png')
     plt.show()
 
+def create_year_plot(series, title_chem_fate_yaxis):
+    tcfy = title_chem_fate_yaxis
+    fig, ax = plt.subplots()
+    ax.plot(series)
+    #rotate and align the tick labels so they look better
+    fig.autofmt_xdate()
+    ax.set_title(title_chem_fate_yaxis[0])
+    ax.set_ylabel(tcfy[3])
+    plt.savefig(f'figs/fig_chemicals_{tcfy[1].replace(" ", "_")}_{tcfy[2].replace(" ", "_")}.png')
+#    plt.show()
+
+def plot_two_hist(chem, fate, minn, maxx):
+    os.makedirs(f'figs/{chem.replace(" ", "_")}', exist_ok=True)
+    bins = np.linspace(minn, maxx, 100)
+    plt.hist(pounds_left, bins, alpha=0.4, label='1987-2002')
+    plt.hist(pounds_right, bins, alpha=0.7, label='2003-2016')
+    plt.title(f'{chem} discharges by {fate}')
+    plt.legend(loc='upper right')
+    plt.savefig(f'figs/{chem.replace(" ", "_")}/fig_2Hist_{chem.replace(" ", "_")}_{fate.replace(" ", "_")}.png')
+#     plt.show()
+    plt.close()
+
 def create_all_chems(path, file):
     full_path = path+file
     df2 = df = pd.DataFrame()
@@ -57,17 +79,6 @@ def get_one_chem(path, name):
     file_path = path+'_'+name.replace(' ', '_').lower()+'.csv'
     df = pd.read_csv(file_path, low_memory=False)
     return df
-
-def create_year_plot(series, title_chem_fate_yaxis):
-    tcfy = title_chem_fate_yaxis
-    fig, ax = plt.subplots()
-    ax.plot(series)
-    #rotate and align the tick labels so they look better
-    fig.autofmt_xdate()
-    ax.set_title(title_chem_fate_yaxis[0])
-    ax.set_ylabel(tcfy[3])
-    plt.savefig(f'figs/fig_chemicals_{tcfy[1].replace(" ", "_")}_{tcfy[2].replace(" ", "_")}.png')
-#    plt.show()
 
 def get_chem_names(path, name):
     file_path = path + name
@@ -121,24 +132,58 @@ if __name__ == '__main__':
             fate_dict[chem] = inner_dict
             inner_dict = {}
 
-    chem = 'CREOSOTE'
-    fate = 'small_fates[0]'
-    fate = '5.1_FUGITIVE_AIR'
-    all_chemicals = get_chem_names(path, ac_file)
-    pounds_left = []
-    pounds_right = []
-    for x, chem in enumerate(all_chemicals[0:100]):
-        df_new = get_one_chem(path, chem)
-        if df_new.empty:
-            continue
-        df_left = df_new[df_new['YEAR']<2002]
-        df_right = df_new[df_new['YEAR']>=2002]
-        dS_left = df_left[df_left[fate]>0].groupby('YEAR').sum()
-        pounds_left.extend(list(dS_left[fate]))
-        dS_right = df_right[df_right[fate]>0].groupby('YEAR').sum()
-        pounds_right.extend(list(dS_right[fate]))
-        p_left = [x for x in pounds_left if x > .1*max(pounds_left) and x < .9*max(pounds_left)]
-        p_right = [x for x in pounds_right if x > .1*max(pounds_right) and x < .9*max(pounds_right)]
+chem = 'AMMONIA'
+chems = ['BROMINE', 'BUTYL ACRYLATE', 'CARBON TETRACHLORIDE', 'CHLORINE',
+ 'CHLORINE DIOXIDE','CYCLOHEXANE', 'ETHYLBENZENE', 'ETHYLENE', 'ETHYLENE GLYCOL', 'ETHYLENE OXIDE']
+fate = 'small_fates[0]'
+fate = '5.1_FUGITIVE_AIR'
+small_fates = ['5.1_FUGITIVE_AIR', '5.2_STACK_AIR', '5.3_WATER']
+is_small_chems = 1
+is_small_fates = 0
+df_fates = get_one_chem(file_path, 'BENZENE')
+fates = df_fates.columns[list(df_fates.columns).index('5.1_FUGITIVE_AIR'):]
+all_chemicals = get_chem_names(path, ac_file)
+
+if is_small_chems:
+    all_chemicals = chems
+if is_small_fates:
+    fates = small_fates
+#all_chemicals=[chem]
+#df.index.name='YEAR'
+pounds_left = []
+pounds_right = []
+minn = 1000.
+maxx = 10*minn
+for chem in all_chemicals:
+    print(chem)
+    df_new = get_one_chem(path, chem)
+    if df_new.empty:
+        continue
+    df_left = df_new[df_new['YEAR']<2002]
+    df_right = df_new[df_new['YEAR']>=2002]
+    for fate in fates[0:20]:
+        pounds_left.extend(list(df_left[df_left[fate]>0][fate]))
+        pounds_right.extend(list(df_right[df_right[fate]>0][fate]))
+        pounds_left = [x for x in pounds_left if x > minn]
+        pounds_left = [x for x in pounds_left if x < maxx]
+        pounds_right = [x for x in pounds_right if x > minn]
+        pounds_right = [x for x in pounds_right if x < maxx]
+        plot_two_hist(chem, fate, minn, maxx)
+#         print(chem, fate)
+#     max_left=max(pounds_left)
+#     max_right=max(pounds_right)
+
+# print(max_left, len(pounds_left))
+# print(len(pounds_left))
+
+
+#         print(chem, fate)
+#     max_left=max(pounds_left)
+#     max_right=max(pounds_right)
+
+# print(max_left, len(pounds_left))
+# print(len(pounds_left))
+
 '''next create histogram plotting routine for these left & right distributions'''
 
 # df_benzene = df_chems[df_chems['CHEMICAL']=='BENZENE']
