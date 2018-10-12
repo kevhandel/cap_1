@@ -10,8 +10,7 @@ ground free from harmful chemicals.   The Agency maintains a database which cont
 chemicals in use by US-based companies, so that we might better track the whereabouts of those which are
 potentially harmful.
 
-* Data on the amounts of each chemical traveling in any of the 60+ streams are delivered through a
-self-reporting system.
+* Data on the amounts of each chemical traveling in any of the 60+ streams are delivered through self-reporting.
 * Complete sets are available for years 1987 - 2016, inclusive.
 
 The publicly-available repository contains over 6 million records on 600 unique chemicals traversing various pathways.
