@@ -104,7 +104,7 @@ Had this worked well, we could select other fates and attempt to discover which 
 
 For starters, the admittedly selective data (emission amounts up to 100,000 pounds)
 for select volatile chemicals reveal diminished fates in fugitive and stack air emissions.  (We also included styrene in water, for additional comparison.)
-<p>&nbsp:
+<p>&nbsp;
 <table>
 <tr><td align="center">M-Xylene Fugitve<br><p>
 <img src="/figs/hist/fig_2Hist_L2_M-XY_5.1_.png" alt = "M-Xylene Fugitve" height="250" width="400"></td>
