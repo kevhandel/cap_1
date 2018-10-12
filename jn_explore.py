@@ -131,8 +131,8 @@ if __name__ == '__main__':
         df_new = get_one_chem(path, chem)
         if df_new.empty:
             continue
-        df_left = df_new[df_new['YEAR']<2003]
-        df_right = df_new[df_new['YEAR']>=2003]
+        df_left = df_new[df_new['YEAR']<2002]
+        df_right = df_new[df_new['YEAR']>=2002]
         dS_left = df_left[df_left[fate]>0].groupby('YEAR').sum()
         pounds_left.extend(list(dS_left[fate]))
         dS_right = df_right[df_right[fate]>0].groupby('YEAR').sum()
