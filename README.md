@@ -78,15 +78,15 @@ We then split the dataframe into 613 dataframes each of which housed the data fo
 <img src="/figs/fig_chemicals_BENZENE_TOTAL_RELEASES.png" alt = "Benzene total fig_chemicals_BENZENE_TOTAL_RELEASES" height="300" width="500"></td>
 </tr><tr><td align="center">
 <img src="/figs/fig_chemicals_CREOSOTE_8.4_RECYCLING_ON-SITE.png" alt = "Creosote recycling on-site" height="300" width="500"></td>
-</tr><<tr><td align="center">
+</tr><tr><td align="center">
 <img src="/figs/fig_chemicals_ETHYLENE_5.1_FUGITIVE_AIR.png" alt = "Ethylene in air" height="300" width="500"></td>
-</tr><<tr><td align="center">
+</tr><tr><td align="center">
 <img src="/figs/fig_chemicals_METHANOL_5.1_FUGITIVE_AIR.png" alt = "Methanol in air" height="300" width="500"></td>
-</tr><<tr><td align="center">
+</tr><tr><td align="center">
 <img src="/figs/fig_chemicals_METHYL_ETHYL_KETONE_5.1_FUGITIVE_AIR.png" alt = "MEK in air" height="300" width="500"></td>
-</tr><<tr><td align="center">
+</tr><tr><td align="center">
 <img src="/figs/fig_chemicals_TOLUENE_5.1_FUGITIVE_AIR.png" alt = "Toluene in air" height="300" width="500"></td>
-</r></table>
+</tr></table>
 
 
 
