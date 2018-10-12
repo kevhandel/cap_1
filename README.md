@@ -102,6 +102,7 @@ The next distribution graph of emission amounts would demonstrate that an effect
 
 Had this worked well, we could select other fates and attempt to discover which ones change over time.
 
+
 <table>
 <tr><td align="center"><br><p>
 <img src="/figs/hist/fig_2Hist_L2_M-XY_5.1_.png" alt = "M-Xylene Fugitve" height="250" width="400"></td>
@@ -110,7 +111,7 @@ Had this worked well, we could select other fates and attempt to discover which 
 <img src="/figs/hist/fig_2Hist_L2_M-XY_5.2_.png" alt = "M-Xylene stack" height="250" width="400"></td></tr>
 
 <tr><td align="center"><br><p>
-<img src="/figs/HIST/fig_2Hist_L2_METH_5.1_.png" alt = "Methylene fugitive" height="250" width="400"></td>
+<img src="/figs/hist/fig_2Hist_L2_METH_5.1_.png" alt = "Methylene fugitive" height="250" width="400"></td>
 
 <td align="center"><br><p>
 <img src="/figs/hist/fig_2Hist_L2_METH_5.2_.png" alt = "Methylene stack" height="250" width="400"></td>
