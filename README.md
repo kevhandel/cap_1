@@ -5,7 +5,7 @@ Contains EPA Data on Chemical Fates within US Industry
 
 ### Motivation and Background...
 
-The United States Environmental Protection Agency (EPA) is charged with keepong our air, the waterways, and
+The United States Environmental Protection Agency (EPA) is charged with keeping our air, the waterways, and
 ground free from harmful chemicals.   The Agency maintains a database which contains the "fate" of industrial
 chemicals in use by US-based companies, so that we might better track the whereabouts of those which are
 potentially harmful.
