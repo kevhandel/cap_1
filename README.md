@@ -102,39 +102,40 @@ The next distribution graph of emission amounts would demonstrate that an effect
 
 Had this worked well, we could select other fates and attempt to discover which ones change over time.
 
-
+For starters, the admittedly selective data (emission amounts 100,000 pounds)
+for select volatile chemicals reveal diminished fates in fugitive and stack air emissions.  (We also included styrene in water, for additional comparison.)
 <table>
-<tr><td align="center"><br><p>
+<tr><td align="center">M-Xylene Fugitve<br><p>
 <img src="/figs/hist/fig_2Hist_L2_M-XY_5.1_.png" alt = "M-Xylene Fugitve" height="250" width="400"></td>
 
-<td align="center"><br><p>
+<td align="center">M-Xylene stack<br><p>
 <img src="/figs/hist/fig_2Hist_L2_M-XY_5.2_.png" alt = "M-Xylene stack" height="250" width="400"></td></tr>
 
-<tr><td align="center"><br><p>
+<tr><td align="center">Methylene fugitive<br><p>
 <img src="/figs/hist/fig_2Hist_L2_METH_5.1_.png" alt = "Methylene fugitive" height="250" width="400"></td>
 
-<td align="center"><br><p>
+<td align="center">Methylene stack<br><p>
 <img src="/figs/hist/fig_2Hist_L2_METH_5.2_.png" alt = "Methylene stack" height="250" width="400"></td>
 </tr>
 
-<tr><td align="center"><br><p>
+<tr><td align="center">Styrene fugitve<br><p>
 <img src="/figs/hist/fig_2Hist_L2_STYR_5.1_.png" alt = "Styrene fugitve" height="250" width="400"></td>
 
-<td align="center"><br><p>
+<td align="center">Styrene water<br><p>
 <img src="/figs/hist/fig_2Hist_L2_STYR_5.3_.png" alt = "Styrene water" height="250" width="400"></td>
 </tr>
 
-<tr><td align="center"><br><p>
+<tr><td align="center">Toluene fugitive<br><p>
 <img src="/figs/hist/fig_2Hist_L2_TOLU_5.1_.png" alt = "Toluene fugitive" height="250" width="400"></td>
 
-<td align="center"><br><p>
+<td align="center">Toluene stack<br><p>
 <img src="/figs/hist/fig_2Hist_L2_TOLU_5.2_.png" alt = "Toluene stack" height="250" width="400"></td>
 </tr>
 
-<tr><td align="center"><br><p>
+<tr><td align="center">Xylene fugitive<br><p>
 <img src="/figs/hist/fig_2Hist_L2_XYLE_5.1_.png" alt = "Xylene fugitive" height="250" width="400"></td>
 
-<td align="center"><br><p>
+<td align="center">Xylene stack<br><p>
 <img src="/figs/hist/fig_2Hist_L2_XYLE_5.2_.png" alt = "Xylene stack" height="250" width="400"></td>
 </tr>
 </table>
