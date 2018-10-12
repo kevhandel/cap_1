@@ -1,8 +1,7 @@
 <img src="/figs/EPA.png"><br>
 ### The Toxic Release Inventory (TRI)
-
-Containing EPA Data on Chemical Fates within US Industry
-
+ Contains EPA Data on Chemical Fates within US Industry **
+<p>&nbsp;
 
 ### Motivation and Background...
 
@@ -31,6 +30,7 @@ Quantification would involve Hypothesis Testing.
 
 As the database contains no information regarding environmental regulation, regression testing to model the effects
 of regulations would require merging this data with a secondary regulations database.
+<p>&nbsp;
 
 ### Investigation...
 
@@ -50,6 +50,7 @@ geographical site-related information.  We kept all of the numeric columns assoc
 no data imputation was warranted at the early stage of exploration.
 We then split the dataframe into 613 dataframes each of which housed the data for a unique chemical, and stored these as csv files.
 * Each dataframe contained the 66 columns related to fate, and the file names were coded according to chemical name, which meant that the future process of querying any given chemical could be fairly well automated.  A lookup function initially queried the monster file for chemical names, and then stored these in a separate tiny file to be accessed at the startup of each session.
+<p>&nbsp;
 
 ### Start the EDA...
 <table>
@@ -69,6 +70,7 @@ We then split the dataframe into 613 dataframes each of which housed the data fo
 </td></tr>
 </table>
 
+<p>&nbsp;
 
 ### Graphing by the 1000's...
 <table>
@@ -88,8 +90,7 @@ We then split the dataframe into 613 dataframes each of which housed the data fo
 <img src="/figs/fig_chemicals_TOLUENE_5.1_FUGITIVE_AIR.png" alt = "Toluene in air" height="300" width="500"></td>
 </tr></table>
 
-
-
+<p>&nbsp;
 
 ### Gathering Data...
 
@@ -102,11 +103,13 @@ The next distribution graph of emission amounts would demonstrate that an effect
 
 Had this worked well, we could select other fates and attempt to discover which ones change over time.
 
+<p>&nbsp;
 
 ### Results...
 The data are interesting in that emission fates exhibit marked variability over time for many of the chemicals.
 However, without numerical analysis, we cannot test the data using regression models in an attempt to
 ascertain true correlation between the various fates.
+<p>&nbsp;
 
 ### Looking Ahead...
 We certainly know that the chemical fate numbers in this database are intrinsically related since the database is
@@ -114,8 +117,9 @@ affords a complete accounting for the measured chemicals.  If one fate decreased
 then one or more others must compensate.  Further, there may be correlation with outside forces, such as Environmental
 regulations.  We may be able to develop a model that predicts the change in fates based upon regulation, for instance.
 
+<p>&nbsp;
 
 ### Data Sources...
-The US EPA maintains the TRI database.
-Kaggle.com maintains a copy of the original.
-We gratefully accessed both.
+The US EPA maintains the TRI database.<br>
+Kaggle.com maintains a copy of the original.<br>
+With gratitude, we accessed both.
