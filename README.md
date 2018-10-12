@@ -1,6 +1,6 @@
 <img src="/figs/EPA.png"><br>
 ### The Toxic Release Inventory (TRI)
- Contains EPA Data on Chemical Fates within US Industry **
+Contains EPA Data on Chemical Fates within US Industry
 <p>&nbsp;
 
 ### Motivation and Background...
